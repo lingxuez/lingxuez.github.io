@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready (function () {
+			$('.selfie #holder').hover(function() {
+				$('.selfie #holder').attr('src','img/photo.jpg');
+				$('.selfie #comment').html('And here I am!');
+			}, function() {
+				$('.selfie #holder').attr('src','img/selfie.png');
+				$('.selfie #comment').html('A selfie should be here');	
+			});    
+		});
+	</script>
+	<title>Lingxue Zhu @ CMU</title>
+	<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+	<link href='mystyle.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="header">
+		<div class="title">
+			Lingxue Zhu
+		</div>
+		<div class="banner">
+			<ul id="navi">
+				<li id="current"><a href="index.html">ABOUT</a></li>
+				<li><a href="index.html">PROJECTS</a></li>
+				<li><a href="index.html">EXPERIENCE</a></li>
+				<li><a href="index.html">CONTACT</a></li>			</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="content">
+				<p>
+					I am a third year Ph.D. student in the <a class="link" href="http://www.stat.cmu.edu/">Department of Statistics</a> at <a class="link" href="http://www.cmu.edu/">Carnegie Mellon University</a>. 
+					I earned my B.S. in Statistics and B.A. minor in Economics from <a class="link" href="http://www.pku.edu.cn/">Peking University</a>, China in 2009. <br />
+				</p>
+				<p>
+					contact: lzhu (at) cmu (dot) edu <br />
+				</p>
+			</div>
+			<div class="selfie">
+				<img id='holder' src='img/selfie.png' alt='A selfie should be here' style="height:250px" />
+				<p id='comment' style="text-align:center;font-size: 1.5em; font-family: 'Gloria Hallelujah', cursive;">A selfie should be here</p><br />
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="info">
+			Last Update: Aug 28, 2015
+		</div>
+	</body>
+	</html>
