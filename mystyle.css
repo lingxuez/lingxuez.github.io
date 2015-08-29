@@ -24,13 +24,14 @@ body {
 }
 .main {
 	width: 80%;
+	min-height: 100px;
 	margin: 0 auto;
 	background-color: white;
 	border-radius: 15px;
 }
 .content {
 	float:left;
-	width: 50%;
+	width: 55%;
 	text-align: left;
 	padding: 2em;
 }
