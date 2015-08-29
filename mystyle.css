@@ -76,6 +76,10 @@ body {
 	font-size: 1.2em;
 	font-family: 'Oswald', Helvetica, sans-serif;
 }
+#item li {
+	font-size: 1em;
+	font-family:Helvetica, sans-serif;
+}
 a {
 	color:inherit;
 	text-decoration: none;

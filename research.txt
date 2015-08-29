@@ -1,0 +1,10 @@
+<h2>Publication</h2>
+<ul id="item">
+	<li><p>L. Zhu, K. Roeder et al., On the Prediction of Risk for Autism From Common Variants. In preparation.</p></li>
+	<li><p>J. Lei, L. Zhu, A Generic Sample Splitting Approach for Refined Community Recovery in Stochastic Block Models. Submitted. arXiv: 1411.1469.</p></li>
+</ul>
+<h2>Presentations</h2>
+<ul id="item">
+	<li><p>Invited Presentation, "On the Prediction of Risk for Autism From Common Variants.", World Congress of Psychiatric Genetics, Toronto, Canada, October 2015</p></li>
+	<li><p>Poster Presentation, "On the Prediction of Risk for Autism From Common Variants.", American Society of Human Genetics Annual Meeting, Baltimore, MD, October 2015</p></li>
+</ul>
