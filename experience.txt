@@ -1,0 +1,12 @@
+<h2>Teaching Assistant</h2>
+<ul id="item">
+	<li>Financial Time Series Analysis, Spring 2014</li>
+	<li>Statistical and Machine Learning Methods for Financial Data, Spring 2014</li>
+	<li>Introduction to Probability, Fall 2013</li>
+	<li>Introduction to Statistical Inference, Fall 2013</li>
+</ul>
+<h2>Internship</h2>
+<ul id="item">
+	<li>Marketing Science and Innovation, PNC, Pittsburgh, PA, Summer 2015</li>
+	<li>Bioinformatics Core Technology Laboratory, BGI, Beijing, China, 2012 - 2013</li>
+</ul>
