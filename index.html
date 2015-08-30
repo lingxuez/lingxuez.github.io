@@ -6,13 +6,6 @@
 	<script>
 		$(document).ready (function () {
 			$('.info').load('http://lingxuez.github.io/info.txt');
-			$('.selfie #holder').hover(function() {
-				$('.selfie #holder').attr('src','img/photo.jpg');
-				$('.selfie #comment').html('And here I am!');
-			}, function() {
-				$('.selfie #holder').attr('src','img/selfie.png');
-				$('.selfie #comment').html('A selfie should be here');	
-			});
 		});
 	</script>
 	<title>Lingxue Zhu @ CMU</title>
@@ -37,7 +30,7 @@
 	</div>
 	<div class="main">
 		<div class="content">
-		<h2>About Me</h2>
+			<h2>About Me</h2>
 			<p>
 				I am a third year Ph.D. student in <a class="link" href="http://www.stat.cmu.edu/">Department of Statistics</a> at <a class="link" href="http://www.cmu.edu/">Carnegie Mellon University</a>. 
 				Before coming to CMU, I earned my B.S. in Statistics and minor in Economics from <a class="link" href="http://www.pku.edu.cn/">Peking University</a>, China, in 2009. <br />
@@ -46,10 +39,19 @@
 				My research mainly focuses on statistical genetics and high-dimensonal inference, under the supervision of Prof. <a class="link" href="http://www.stat.cmu.edu/~roeder/">Kathryn Roeder</a> and Prof. <a class="link" href="http://www.stat.cmu.edu/~jinglei/">Jing Lei</a>. Currently I am working on hypothesis testing problems on gene networks, with hope to understand more about the genetic architecture of Schizophrenia.
 			</p>
 		</div>
-		<div class="selfie">
-			<img id='holder' src='img/selfie.png' alt='A selfie should be here' style="height:250px" />
+		<div class="flipper">
+			<div class="holder">
+				<img src="img/selfie.png" alt="A selfie should be here" style="height:250px;" />
+				<span style="text-align:center; font-size: 1.2em; font-family: 'Gloria Hallelujah', cursive;">A selfie should be here ...</span>
+			</div>
+			<div class="photo">
+				<img src="img/photo.jpg" alt="And here I am!" style="height:250px;" />
+				<span style="text-align:center; font-size: 1.2em; font-family: 'Gloria Hallelujah', cursive;">... And here it is!</span>
+			</div>
+
+<!-- 			<img id='holder' src='img/selfie.png' alt='A selfie should be here' style="height:250px" />
 			<div id='comment' style="text-align:center;font-size: 1.5em; font-family: 'Gloria Hallelujah', cursive;">A selfie should be here</div>
-		</div>
+		-->		</div>
 		<div class="clear"></div>
 	</div>
 	<div class="info"></div>

@@ -10,7 +10,7 @@ body {
 	background-attachment: fixed;
 }
 .header {
-	width:80%;
+	width: 1000px;
 	margin: 0 auto;
 	height: 110px;
 	color: white;
@@ -28,14 +28,15 @@ body {
 	line-height: 120px;
 }
 .main {
-	width: 80%;
+	width: 1000px;
 	min-height: 100px;
 	margin: 0 auto;
 	background-color: white;
 	border-radius: 15px;
+	padding:2em;
 }
 .textonly {
-	width: 80%;
+	width: 1000px;
 	min-height: 100px;
 	margin: 0 auto;
 	background-color: white;
@@ -45,19 +46,44 @@ body {
 }
 .content {
 	float:left;
-	width: 60%;
+	width: 600px;
 	text-align: left;
-	padding: 2em;
 }
 .content p {
 	font-size: 1.2em;
 }
-.selfie {
-	float: right;
-	width: 40%;
+.flipper {
+	float: left;
+	width: 300px;
 	text-align: center;
-	padding: 2em;
-	padding-top: 4em;
+	position: relative;
+}
+.holder,
+.photo {
+	display: inline-block;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	left: 20px;
+}
+.holder,
+.photo {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+.photo {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.flipper:hover .holder {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.flipper:hover .photo {
+	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
 }
 .clear {
 	clear: both;
