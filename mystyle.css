@@ -37,12 +37,21 @@ body {
 }
 .textonly {
 	width: 1000px;
-	min-height: 100px;
 	margin: 0 auto;
 	background-color: white;
 	border-radius: 15px;
 	text-align: left;
 	padding: 2em;
+}
+.contactinfo {
+    display: inline-block;
+    width: 350px;
+    vertical-align: top;
+}
+.map {
+    display: inline-block;
+    width: 580px;
+    padding-left: 4em;
 }
 .content {
 	float:left;
