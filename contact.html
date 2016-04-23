@@ -36,12 +36,18 @@
 		</div>
 	</div>
 	<div class="textonly">
-		<h2>Office</h2>
-		<p style="font-size:1.2em;">FMS 328<br />Carnegie Mellon University<br />
-			5000 Forbes Avenue<br />Pittsburgh, PA 15213</p>
-		<h2>Email</h2>
-		<p style="font-size:1.2em;">lzhu (at) cmu (dot) edu</p>
-	</div>
+        <div class="contactinfo">
+	    	<h2>Office</h2>
+	    	<p style="font-size:1.2em;">FMS 328<br />Carnegie Mellon University<br />
+	    		5000 Forbes Avenue<br />Pittsburgh, PA 15213</p>
+	    	<h2>Email</h2>
+	    	<p style="font-size:1.2em;">lzhu (at) cmu (dot) edu</p>
+	    </div>
+        <div class="map">
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:500px;'><div id='gmap_canvas' style='height:400px;width:500px;'></div>
+            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(40.4432914,-79.9464303),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.4432914,-79.9464303)});infowindow = new google.maps.InfoWindow({content:'<strong>Carnegie Mellon University</strong><br>FMS Building, 5000 Forbes Avenue<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        </div>
+    </div>
 	<div class="info"></div>
 	<!-- Start of StatCounter Code for Default Guide -->
 	<script type="text/javascript">
