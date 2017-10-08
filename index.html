@@ -1,87 +1,361 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-	<meta name="google-site-verification" content="_icP2W3B6y_gFG92Dh-caUWIh_sEnE4tPu8pghzaH2w" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
-	</script>
+  <title>Lingxue Zhu, CMU Statistics</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
-		$(document).ready (function () {
-			$('.info').load('http://lingxuez.github.io/info.txt');
-		});
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+	
+	      var hash = this.hash;
+	
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 500, function(){
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
 	</script>
-	<title>Lingxue Zhu, CMU Statistics</title>
-	<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-	<link href='mystyle.css' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+
 </head>
+
 <body>
-	<div class="header">
-		<div class="title">
-			Lingxue Zhu
-		</div>
-		<div class="banner">
-			<ul id="navi">
-				<li id="current"><a href="index.html">ABOUT</a></li>
-				<li><a href="research.html">RESEARCH</a></li>
-				<li><a href="experience.html">EXPERIENCE</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="main">
-		<div class="content">
-			<h2>About Me</h2>
-			<p>
-				Welcome to Lingxue's homepage!
-			</p>
-			<p>
-				I am a fifth-year Ph.D. student in the <a class="link" href="http://www.stat.cmu.edu/">Department of Statistics & Data Science</a> at <a class="link" href="http://www.cmu.edu/">Carnegie Mellon University</a>. 
-				Before coming to CMU, I earned my B.S. in Statistics and B.A. in Economics from <a class="link" href="http://english.pku.edu.cn/">Peking University</a>, China, in 2013. <br />
-			</p>
-			<p>
-				I am currently working with Prof. <a class="link" href="http://www.stat.cmu.edu/~roeder/">Kathryn Roeder</a> and Prof. <a class="link" href="http://www.stat.cmu.edu/~jinglei/">Jing Lei</a>. My research spans a wide range of topics, including network community detection, high-dimensional inference, hierarchical modeling, as well as many exciting application work on statistical genetics. Some of the codes for my research are available on <a class="link" href="https://github.com/lingxuez">Github</a>.
-			</p>
-			<h2>News</h2>
-			<p>
-			My intern project at Uber is highlighted on 
-			<a class="link" href="https://eng.uber.com/neural-networks-uncertainty-estimation/")>
-			Uber Engineering Blog</a>.
-			</p>
+  <div class="banner">
+    <div id="header">
+      <div id="name">
+        Lingxue Zhu
+      </div>
+      <div id="navigator">
+        <div class="nav_cell"><a class="nav" href="#about">about</a></div>
+        <div class="nav_cell"><a class="nav" href="#research">research</a></div>
+        <div class="nav_cell"><a class="nav" href="#talks">talks</a></div>
+        <div class="nav_cell"><a class="nav" href="#experience">experience</a></div>
+        <div class="nav_cell"><a class="nav" href="#courses">courses</a></div>
+      </div>
+    </div>
+  </div>
 
-		</div>
-		<div class="flipper">
-			<div class="holder">
-				<img src="img/selfie.png" alt="A selfie should be here" style="height:250px;" />
-				<span style="text-align:center; font-size: 1.2em; font-family: 'Gloria Hallelujah', cursive;">A selfie should be here ...</span>
-			</div>
-			<div class="photo">
-				<img src="img/photo.jpg" alt="Lingxue Zhu" style="height:250px;" />
-				<span style="text-align:center; font-size: 1.2em; font-family: 'Gloria Hallelujah', cursive;">... And here it is!</span>
-			</div>
+  <div id="main">
 
-<!-- 			<img id='holder' src='img/selfie.png' alt='A selfie should be here' style="height:250px" />
-			<div id='comment' style="text-align:center;font-size: 1.5em; font-family: 'Gloria Hallelujah', cursive;">A selfie should be here</div>
-		-->		</div>
-		<div class="clear"></div>
-	</div>
-	<div class="info"></div>
-	<!-- Start of StatCounter Code for Default Guide -->
-	<script type="text/javascript">
-		var sc_project=10595714; 
-		var sc_invisible=1; 
-		var sc_security="ee39bc4f"; 
-		var scJsHost = (("https:" == document.location.protocol) ?
-			"https://secure." : "http://www.");
-		document.write("<sc"+"ript type='text/javascript' src='" +
-			scJsHost+
-			"statcounter.com/counter/counter.js'></"+"script>");
-	</script>
-	<noscript><div class="statcounter"><a title="shopify visitor
-		statistics" href="http://statcounter.com/shopify/"
-		target="_blank"><img class="statcounter"
-		src="http://c.statcounter.com/10595714/0/ee39bc4f/1/"
-		alt="shopify visitor statistics"></a></div></noscript>
-		<!-- End of StatCounter Code for Default Guide -->
-	</body>
-	</html>
+    <div class="content">
+      <a class="anchor" id="about"></a>
+      <div class="introduction">
+        <div id="selfie">
+          <img src="images/selfie.jpg" /><br>
+          <div style="text-align: center; margin-top: 10px; font-size: 14px; font-family: monospace;">lzhu [at] cmu [dot] edu</div>
+        </div>
+        <div class="right">
+        <p>I am a fifth-year Ph.D. student in the <a class="link" href="http://www.stat.cmu.edu/" target="_blank">Department of Statistics & Data Science</a> at <a class="link" href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>. I also have a secondary Master's degree in <a class="link" href="https://www.ml.cmu.edu/" target="_blank">Machine Learning</a>.
+		Before coming to CMU, I got my B.S. in Statistics and secondary B.A. in Economics from <a class="link" href="http://www.pku.edu.cn/" target="_blank">Peking University</a>, China, in 2013.</p>
+        <p>I am currently working with Professor <a class="link" href="http://www.stat.cmu.edu/~roeder/" target="_blank">Kathryn Roeder</a> and Professor <a class="link" href="http://www.stat.cmu.edu/~jinglei/" target="_blank">Jing Lei</a>. My research spans a wide range of topics, including network community detection, high-dimensional inference, hierarchical modeling, Bayesian inference, as well as many exciting application work in statistical genetics. Some of the codes for my research are available on <a class="link" href="https://github.com/lingxuez" target="_blank">GitHub</a>.</p>
+      </div>
+    </div>
+
+        <div class="subtitle">
+          News
+        </div>
+        <ul id="news">
+          <li>I will give a talk at <a href="http://icdm2017.bigke.org/" target="_blank">ICDM 2017</a> in New Orleans, Nov 18 - 21.</li>
+          <li>Our <a href="https://arxiv.org/pdf/1609.08028.pdf" target="_blank">single cell paper</a> is accepted by the Annals of Applied Statistics.</li>
+          <li>My intern project is featured on <a href="https://eng.uber.com/neural-networks-uncertainty-estimation/" target="_blank">Uber Engineering Blog</a>.</li>
+        </ul>
+        </div>
+
+    <hr>
+
+    <div class="content">
+      <div class="title">Research</div>
+      <a class="anchor" id="research"></a>
+
+      <div class="subtitle">Theory and Methodology</div>
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-embed.jpg">
+          <div class="right">
+            <div class="research_title">
+              Uncertainties in Neural Networks
+            </div>
+            <p>
+            At Uber, probabilistic time series forecasting is used for robust prediction of number of trips during special events, driver incentive allocation, as well as real-time anomaly detection across millions of metrics. Classical time series models are often hard to tune, scale, and add exogenous variables to. In this project, we proposed a novel end-to-end LSTM-based Bayesian deep model that provides time series prediction along with uncertainty estimation. This model has been successfully applied to large-scale time series anomaly detection at Uber. This work was completed during an internship.
+            </p>
+          </div>
+        </div>
+        <div class="publication">
+			  <span class="emph">L. Zhu</span>, N. Laptev (2017)<br>
+			  Deep and confident prediction for time series at Uber.<br>
+			  <i>ICDM'17 Workshop.</i><br>
+			  (<a class="link" href="https://arxiv.org/pdf/1709.01907.pdf" target="_blank">pdf</a>)
+			  (<a class="link" href="https://eng.uber.com/neural-networks-uncertainty-estimation/" target="_blank">Blog post</a>)
+        </div>
+      </div>
+
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-sc.png">
+          <div class="right">
+            <div class="research_title">
+              Single Cell RNA-seq Modeling
+            </div>
+          	<p>
+            Recent advances of single cell sequencing yield valuable insights about individual cells. However,
+          	compared to traditional tissue-level bulk RNA-seq, analyzing single cell data is challenging because of high levels of technical noise. Here, we proposed a unified statistical framework for joint analysis of single cell and bulk RNA-seq data. Our hierarchical model borrows the strength from both data sources, identifies noisy entries in single cell data, and leads to a more accurate estimation of gene expression profiles.   
+          	</p>
+
+          </div>
+        </div>
+        <div class="publication">
+        <span class="emph">L. Zhu</span>, J. Lei, B. Devlin, K. Roeder (2017)<br>
+			    A unified statistical framework for single cell and bulk RNA sequencing data.<br>
+			    <i>Annals of Applied Statistics</i> (to appear).<br>
+			    (<a class="link" href="https://arxiv.org/pdf/1609.08028.pdf" target="_blank">pdf</a>)
+			    (<a class="link" href="https://github.com/lingxuez/scUnif" target="_blank">code</a>)
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-sled.jpg">
+          <div class="right">
+            <div class="research_title">
+              High-dimensional Covariance Matrix Inference
+            </div>
+          <p>
+            Two-sample test for high-dimensional covariance matrices is a long-lasting and challenging statistical problem. Here, we proposed a novel perspective that utilizes the spectrum of the differential matrix, which is closely related with Sparse Principal Component Analysis. Our test remains powerful even when the signals are sparse and weak, and outperforms existing approaches under various practical scenarios. We successfully applied our method to the largest gene­ expression dataset comparing schizophrenia and control brains, and revealed intriguing patterns of gene-gene co­-expression change.
+          	</p>
+          </div>
+        </div>
+
+        <div class="publication">
+			  <span class="emph">L. Zhu</span>, J. Lei, B. Devlin, K. Roeder (2017)<br>
+			    Testing high-dimensional covariance matrices, with application to detecting schizophrenia risk genes.<br>
+			    <i>Annals of Applied Statistics</i>, 11(3):1810-1831.<br>
+			    (<a class="link" href="https://arxiv.org/pdf/1606.00252.pdf" target="_blank">pdf</a>)	
+			    (<a class="link" href="https://github.com/lingxuez/sLED" target="_blank">code</a>)
+        </div>
+      </div>
+      
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/plot-sbm.jpg">
+          <div class="right">
+            <div class="research_title">
+              Network Community Recovery
+            </div>
+          	<p>
+          	In this project, we study the problem of community recovery in stochastic block models. We show that a simple sample splitting trick can refine almost any approximately correct community recovery method to achieve exactly correct community recovery, when the expected node degrees are of order <i>log(n)</i> or higher. Our results simplify and extend some of the previous work on exact community recovery using sample splitting, and provide better theoretical guarantee for degree corrected stochastic block models.
+          	</p>
+          </div>
+        </div>
+        <div class="publication">
+			    J. Lei, <span class="emph">L. Zhu</span> (2017)<br>
+			    Generic sample splitting for refined community recovery in degree corrected stochastic block models.
+          <br>
+			    <i>Statistica Sinica</i>, 27(2017):1639-1659.<br>
+			    (<a class="link" href="https://arxiv.org/pdf/1411.1469.pdf" target="_blank">pdf</a>)
+			    (<a class="link" href="https://github.com/lingxuez/splitSpectral" target="_blank">code</a>)
+        </div>
+      </div>
+
+      <div class="subtitle">Application</div>
+
+      <div class="block">
+        <div class="abstract">
+            <div class="application_title">
+              Limited contribution of rare, noncoding variation to autism spectrum disorder from sequencing of 2,076 genomes in quartet families.
+            </div>
+            <div class="publication">
+              D. Werling, H. Brand, J. An, M. Stone, J. Glessner, <span class="emph">L. Zhu</span>, R. Collins, S. Dong, R. Layer, E. Markenscoff-Papadimitriou, A. Farrell, G. Schwartz, B. Currall, J. Dea, C. Duhn, C. Erdman, M. Gilson, R. Handsaker, S. Kashin, L. Klei, J. Mandell, T. Nowakowski, Y. Liu, S. Pochareddy, L. Smith, M. Walker, H. He, A. Kriegstein, J. Rubenstein, N. Sestan, S. McCarroll, B. Neale, H. Coon, A. Willsey, J. Buxbaum, M. Daly, M. State, A. Quinlan, G. Marth, K. Roeder, B. Devlin, M. Talkowski, S. Sanders (2017)<br>
+              <i>Under revision</i>.<br>
+              (<a class="link" href="https://www.biorxiv.org/content/biorxiv/early/2017/04/13/127043.full.pdf" target="_blank">pdf</a>)
+			      </div>
+          </div>
+      </div>
+
+      <div class="block">
+        <div class="abstract">
+          <div class="application_title">
+            Large-scale analyses of transcribed enhancers in the human brain.
+          </div>
+          <div class="publication">
+            M. Hauberg, J. Fullard, <span class="emph">L. Zhu</span>, A. Cohain, C. Giambartolomei, R. Misir, S. Reach, J. Johnson, M. Wang, M. Mattheisen, A. Børglum, J. Grove, B. Zhang, the CommonMind Consortium, S. Sieberts, M. Peters, E. Domenici, E. Schadt, B. Devlin, P. Sklar, K. Roeder, P. Roussos (2017)<br>
+            <i>In preparation</i>. 
+          </div>
+        </div>
+      </div>
+
+    </div>
+        
+    <hr>
+    
+    <div class="content">
+      <div class="title">Talks</div>
+      <a class="anchor" id="talks"></a>
+
+      <ul>
+			  <li>
+			  <i>Deep and confident prediction for time series at Uber</i> (talk).<br>
+			  2017 International Conference on Data Mining Workshop (ICDM), New Orleans, LA.
+			  </li>
+
+			  <li>
+			  <i>Estimating uncertainties in neural networks for time series prediction at Uber</i> (poster).<br>
+			  2017 Uber’s Machine Learning Session, San Francisco, CA.
+			  <span class="emph">(Best presentation award)</span>
+			  </li>
+
+			  <li>
+			  <i>A two-sample test for high-dimensional covariance matrices via sparse principal component analysis</i> (special talk).<br>
+			  2016 Joint Statistical Meetings (JSM), Chicago, IL. 
+			  <span class="emph">(Student paper award)</span>
+			  </li>
+
+			  <li>
+			  <i>Detecting schizophrenia genes via a two-sample test for high-dimensional covariance matrices</i> (invited talk).<br>
+			  2016 ICSA Applied Statistics Symposium, Atlanta, GA. 
+			  </li>
+
+			  <li>
+			  <i>On the prediction of risk for autism from common variants</i> (invited talk).<br>
+			  2015 World Congress of Psychiatric Genetics (WCPG), Toronto, Canada. 
+			  </li>
+
+			  <li>
+			  <i>On the prediction of risk for autism from common variants</i> (poster).<br>
+			  2015 American Society of Human Genetics Annual Meeting (ASHG), Baltimore, MD.
+			  </li>
+
+      </ul>
+    </div>
+
+    <hr>
+    
+    <div class="content">
+      <div class="title">Experience</div>
+      <a class="anchor" id="experience"></a>
+      <div class="subtitle">Internship</div>
+      <ul>
+			  <li>
+			  Data Scientist Intern @ Uber, May - Aug 2017.<br>
+			  (see my intern project on 
+			  <a class="link" href="https://eng.uber.com/neural-networks-uncertainty-estimation/" target="_blank")>
+			  Uber Engineering Blog</a> and our 
+        <a class="link" href="https://arxiv.org/pdf/1709.01907.pdf" target="_blank")>
+        ICDM workshop paper</a>)
+			   </li>
+			  <li>
+			  Decision Analyst Intern @ PNC Financial Services, May - Aug 2015
+			  </li>
+			  
+      </ul>
+
+      <div class="subtitle">Professional Service</div>
+
+      <ul>
+          <li>
+          Founding member of <a class="link" href="http://www.stat.cmu.edu/help-network/" target="_blank">Statistics Department Help Network</a>, May 2017 -- present
+          </li>
+      </ul>
+
+	    <div class="subtitle">Teaching Assistant</div>
+
+      <ul>
+			  <li>Financial Time Series Analysis, Spring 2014</li>
+			  <li>Statistical and Machine Learning Methods for Financial Data, Spring 2014</li>
+			  <li>Introduction to Probability, Fall 2013</li>
+			  <li>Introduction to Statistical Inference, Fall 2013</li>
+      </ul>
+
+	    
+
+    </div>
+
+    <hr>
+
+    <div class="content">
+      <div class="title" id="courses">Courses</div>
+      <a class="anchor" id="courses"></a>
+      <ul>
+			<li>36/10-701 
+			<a class="link" href="https://alex.smola.org/teaching/cmu2013-10-701" target="_blank">Machine Learning</a>
+			</li>
+			
+			<li>36/10-702 
+			<a class="link" href="http://www.stat.cmu.edu/~larry/=sml" target="_blank">Statistical Machine Learning</a>
+			</li>
+
+			<li>36/10-705
+			<a class="link" href="http://www.stat.cmu.edu/~jinglei/syllabus_f13.pdf" target="_blank">Intermediate Statistics</a>
+			</li>
+
+			<li>36-707 Regression Analysis</li>
+
+			<li>36/10-725 
+			<a class="link" href="http://www.stat.cmu.edu/~ryantibs/convexopt-S15" target="_blank">Convex Optimization</a>
+			</li>
+
+			<li>36-750 Statistical Computing</li>
+
+			<li>36-752
+			<a class="link" href="http://www.stat.cmu.edu/~jinglei/spring14/syllabus_36752_s14.pdf" target="_blank">Advanced Probability Overview</a>
+			</li>
+
+			<li>36-755 Advanced Statistical Theory</li>
+
+			<li>11-441 
+			<a class="link" href="https://lti.cs.cmu.edu/intranet/lti-course-listings#11741" target="_blank">
+			Machine Learning for Text Mining
+			</a>
+			</li>
+
+			<li>10-605 
+			<a class="link" href="http://curtis.ml.cmu.edu/w/courses/index.php/Machine_Learning_with_Large_Datasets_10-605_in_Fall_2016" target="_blank">
+			Machine Learning with Large Datasets
+			</a>
+			</li>
+
+			<li>10-707 
+			<a class="link" href="https://www.cs.cmu.edu/~rsalakhu/10707/" target="_blank">
+			Topics in Deep Learning
+			</a>
+			(check out our final project
+			<a class="link" href="https://github.com/lingxuez/v2v-style-transfer" target="_blank">
+			here
+			</a>)
+			</li>
+
+			<li>10-708 
+			<a class="link" href="https://www.cs.cmu.edu/~epxing/Class/10708-17/" target="_blank">
+			Probabilistic Graphical Models
+			</a>
+			</li>
+
+			<li>15-826 
+			<a class="link" href="https://www.cs.cmu.edu/~christos/courses/826.S17/" target="_blank">
+			Multimedia Databases and Data Mining
+			</a>
+			(check out our final project
+			<a class="link" href="https://github.com/lingxuez/SQLdcube" target="_blank">
+			here
+			</a>)
+			</li>
+      </ul>
+
+
+    </div>
+  </div>
+  <div style="margin-top: 10px; text-align: center; font-size: 14px;">
+  Copyright &copy; 2015 - 2017, Lingxue Zhu. All rights reserved.<br>
+  Last Updated: Oct 7, 2017
+  </div>
+</body>
+</html>
